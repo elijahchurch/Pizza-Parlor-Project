@@ -50,7 +50,7 @@ This webpage was made with HTML and styled with CSS. It contains an order form w
           Pizza.calculateCost()\
 **Expected Output:** Pizza {....., size: "extra-large", cost: "25"}
 
-**Test:** "It will add 1.50 to the cost property for each array element in the toppings property, in addition to the calculation for the size property"
+**Test:** "It will add 1.50 to the cost property for each array element in the toppings property, in addition to the calculation for the size property"\
 **Code** Pizza {toppings: ["pepperoni", "sausage"], size: small, cost: 0}\
 Pizza.calcualteCost()\
 **Expected Output:** Pizza {Pizza toppings: ["pepperoni", "sausage"], size: small, cost: 13}
