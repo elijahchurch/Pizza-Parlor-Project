@@ -20,28 +20,37 @@ Pizza.prototype.calculateCost = function () {
 
 // UI Logic 
 
+function uncheckBoxes(checkedboxes) {
+    for (let i = 0; i < length; i++) {
+        checkedboxes[i].checked = false;
+    }
+}
+
 function handlePizzaOrderForm(event) {
     event.preventDefault();
     let toppings = [];
-    let selectedToppings = document.querySelectorAll("input[name='toppings']:checked");
+    const selectedToppings = document.querySelectorAll("input[name='toppings']:checked");
     selectedToppings.forEach(function (selection) {
         toppings.push(selection.value)
     });
-    let pizzaSize = document.getElementById("pizza-size").value;
+    const pizzaSize = document.getElementById("pizza-size").value;
     let newPizza = new Pizza(toppings, pizzaSize);
     newPizza.calculateCost();
     document.getElementById("order-size").innerText = newPizza.size;
     document.getElementById("order-cost").innerText = "$" + newPizza.cost.toFixed(2);
-    let toppingList = document.createElement("ul")
+    const toppingList = document.createElement("ul")
     newPizza.toppings.forEach(function (topping) {
-        let listItem = document.createElement("li");
+        const listItem = document.createElement("li");
         toppingList.append(listItem);
         listItem.innerText = topping;
     });
     document.getElementById("order-toppings").append(toppingList);
+    document.getElementById("order-result").removeAttribute("class");
+    console.log(selectedToppings);
+    uncheckBoxes(selectedToppings);
 }
 
 window.addEventListener("load", function () {
-    let pizzaForm = document.getElementById("pizza-order");
+    const pizzaForm = document.getElementById("pizza-order");
     pizzaForm.addEventListener("submit", handlePizzaOrderForm);
 });
