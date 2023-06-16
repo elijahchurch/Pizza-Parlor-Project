@@ -14,8 +14,7 @@
 * Visual Code Studio
 
 ## Description:
-
-
+This webpage was made with HTML and styled with CSS. It contains an order form where the user can create a pizza by selecting any number of desired toppings from checkbox inputs and a pizza size from a selector input. When the form is submitted, the HTML div where the form existed is hidden, and a previously hidden div appears displaying user's pizza order and the final cost calculated from the user's inputs. On the JavaScript end of things, when the form is submitted a constructor function is used to make an Object with properties whose values are defined by the user input values and with an additional cost property whose base value starts at 0. A custom prototype method for the Object is then called upon it, that checks the toppings and size property values via branching and adds value to the cost property based on the defined logic. The object's properties are targeted and added to the next HTML where specified. 
 
 ## Tests for JavaScript functions:
 
@@ -55,3 +54,19 @@
 **Code** Pizza {toppings: ["pepperoni", "sausage"], size: small, cost: 0}\
 Pizza.calcualteCost()\
 **Expected Output:** Pizza {Pizza toppings: ["pepperoni", "sausage"], size: small, cost: 13}
+
+## Setup/ Installation Requirements
+
+* Clone this repository to your desktop.
+* In the topmost directory of the project, open up all of the code using Visual Code Studio or a similar application to view the written code.
+* The webpage itself can be viewed and interacted with by right-clicking the index.html in Visual Code and opening up a Live Server or visiting this [webpage hosted by github]().
+
+## Known Bugs
+
+* The checkout button currently has no created functionality. If time allowed, it would have directed the user to another hidden div where the user could enter his address information for online checkout.
+
+## License
+
+MIT
+
+Copyright (c) 2023 Jason Elijah Church
