@@ -17,7 +17,7 @@
         <div class="info-container">
             <h2> Fill out your order for a pizza</h2>
             <form id="pizza-order">
-                <h3> Select your toppings:</h4>
+                <h3> Select your toppings ($1.50 per):</h4>
                     <div>
                         <input type="checkbox" name="toppings" id="topping-1" value="Pepperoni">
                         <label for="topping-1">Pepperoni</label>
@@ -53,10 +53,10 @@
                     <div>
                         <h3> Select a Size:</h4>
                             <select id="pizza-size">
-                                <option value="Small">Small</option>
-                                <option value="Medium">Medium</option>
-                                <option value="Large">Large</option>
-                                <option value="Extra-Large">Extra-Large</option>
+                                <option value="Small">Small ($10)</option>
+                                <option value="Medium">Medium ($15)</option>
+                                <option value="Large">Large ($20)</option>
+                                <option value="Extra-Large">Extra-Large ($25)</option>
                             </select>
                     </div>
                     </br>
@@ -70,10 +70,10 @@
     <div id="order-result" class="hidden container">
         <h2> Here's your pizza order!:</h2>
         <div class="info-container">
-            <p> Pizza size: <span id="order-size"></span></p>
             <div id="order-toppings">
                 <p> Your toppings:</p>
             </div>
+            <p> Pizza size: <span id="order-size"></span></p>
             <p> Your Cost: <span id="order-cost"></span></p>
             <p>If you are satisfied with your order, go to check out. If not, click "new order" to order a different
                 pizza.
