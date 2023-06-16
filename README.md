@@ -40,3 +40,8 @@
 **Code:** Pizza {....., size: medium, cost: 0}\
           Pizza.calculateCost()\
 **Expected Output:** Pizza {....., size: medium, cost: 15}
+
+**Test:** "It will calculate and enter a cost of $20 to the cost property if the size property is large"\
+**Code:** Pizza {....., size: large, cost: 0}\
+          Pizza.calculateCost()\
+**Expected Output:** Pizza {....., size: large, cost: 20}
