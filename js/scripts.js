@@ -46,6 +46,8 @@ function handlePizzaOrderForm(event) {
 function resetBackToStart() {
     document.getElementById("order-result").classList.add("hidden");
     document.getElementById("starting-point").classList.remove("hidden");
+    document.getElementById("order-size").innerText = "";
+    document.getElementById("order-cost").innerText = "";
     document.querySelector("ul").remove();
 }
 
