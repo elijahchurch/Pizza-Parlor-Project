@@ -48,7 +48,9 @@ function resetBackToStart() {
     document.getElementById("starting-point").classList.remove("hidden");
     document.getElementById("order-size").innerText = "";
     document.getElementById("order-cost").innerText = "";
-    document.querySelector("ul").remove();
+    document.querySelectorAll("ul").forEach(function (list) {
+        list.remove();
+    });
 }
 
 
