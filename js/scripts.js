@@ -6,7 +6,7 @@ function Pizza(toppingArray, inputSize) {
 }
 
 Pizza.prototype.calculateCost = function () {
-    this.cost += 1.50 * this.toppings.length;
+    this.cost += 1.5 * this.toppings.length;
     if (this.size === "Small") {
         this.cost += 10;
     } else if (this.size === "Medium") {
@@ -28,10 +28,20 @@ function handlePizzaOrderForm(event) {
         toppings.push(selection.value)
     });
     let pizzaSize = document.getElementById("pizza-size").value;
-    console.log(typeof pizzaSize, pizzaSize, toppings);
+    let newPizza = new Pizza(toppings, pizzaSize);
+    newPizza.calculateCost();
+    document.getElementById("order-size").innerText = newPizza.size;
+    document.getElementById("order-cost").innerText = "$" + newPizza.cost.toFixed(2);
+    let toppingList = document.createElement("ul")
+    newPizza.toppings.forEach(function (topping) {
+        let listItem = document.createElement("li");
+        toppingList.append(listItem);
+        listItem.innerText = topping;
+    });
+    document.getElementById("order-toppings").append(toppingList);
 }
 
 window.addEventListener("load", function () {
     let pizzaForm = document.getElementById("pizza-order");
     pizzaForm.addEventListener("submit", handlePizzaOrderForm);
-})
+});

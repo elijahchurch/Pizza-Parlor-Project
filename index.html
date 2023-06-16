@@ -3,7 +3,7 @@
 
 <head>
     <script src="js/scripts.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Pizza Parlor</title>
 </head>
 
@@ -41,10 +41,12 @@
 
     </div>
 
-    <div>
+    <div class="hidden">
         <h2> Here's your pizza Order!:</h2>
-        <p> Pizza size:<span id="order-size"></span></p>
-        <p> Your toppings: <span id="order-price"></span></p>
+        <p> Pizza size: <span id="order-size"></span></p>
+        <div id="order-toppings">
+            <p> Your toppings:</p>
+        </div>
         <p> Your Cost: <span id="order-cost"></span></p>
     </div>
 
