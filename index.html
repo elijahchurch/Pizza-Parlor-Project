@@ -18,22 +18,38 @@
             <h2> Fill out your order for a pizza</h2>
             <form id="pizza-order">
                 <h3> Select your toppings:</h4>
-                    <label for="topping-1">Pepperoni</label>
-                    <input type="checkbox" name="toppings" id="topping-1" value="Pepperoni">
-                    <label for="topping-2">Sausage</label>
-                    <input type="checkbox" name="toppings" id="topping-2" value="Sausage">
-                    <label for="topping-3">Mushrooms</label>
-                    <input type="checkbox" name="toppings" id="topping-3" value="Mushrooms">
-                    <label for="topping-4">Onions</label>
-                    <input type="checkbox" name="toppings" id="topping-4" value="Onions">
-                    <label for="topping-5">Olives</label>
-                    <input type="checkbox" name="toppings" id="topping-5" value="Olives">
-                    <label for="topping-6">Green Peppers</label>
-                    <input type="checkbox" name="toppings" id="topping-5" value="Green Peppers">
-                    <label for="topping-7">Tomatoes</label>
-                    <input type="checkbox" name="toppings" id="topping-7" value="Tomatoes">
-                    <label for="topping-8">Basil</label>
-                    <input type="checkbox" name="toppings" id="topping-8" value="Basil">
+                    <div>
+                        <input type="checkbox" name="toppings" id="topping-1" value="Pepperoni">
+                        <label for="topping-1">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="toppings" id="topping-2" value="Sausage">
+                        <label for="topping-2">Sausage</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="toppings" id="topping-3" value="Mushrooms">
+                        <label for="topping-3">Mushrooms</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="toppings" id="topping-4" value="Onions">
+                        <label for="topping-4">Onions</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="toppings" id="topping-5" value="Olives">
+                        <label for="topping-5">Olives</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="toppings" id="topping-5" value="Green Peppers">
+                        <label for="topping-6">Green Peppers</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="toppings" id="topping-7" value="Tomatoes">
+                        <label for="topping-7">Tomatoes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="toppings" id="topping-8" value="Basil">
+                        <label for="topping-8">Basil</label>
+                    </div>
                     <div>
                         <h3> Select a Size:</h4>
                             <select id="pizza-size">
@@ -59,10 +75,9 @@
                 <p> Your toppings:</p>
             </div>
             <p> Your Cost: <span id="order-cost"></span></p>
-            </br>
             <p>If you are satisfied with your order, go to check out. If not, click "new order" to order a different
                 pizza.
-            <p>
+            </p>
             <div class="buttons">
                 <button class="buttons" id="new-order">New order</button>
                 <button class="buttons" id="checkout">Checkout</button>
