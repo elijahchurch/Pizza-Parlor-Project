@@ -34,14 +34,19 @@
 **Test:** "It will calculate and enter a cost of $10 to the cost property of a Pizza Object if the size of the Pizza Object is small"\
 **Code:** const newPizza = new Pizza(["pepperoni", "sausage"], "small", cost: 0)\
           newPizza.calculateCost()\
-**Expected Output:** newPizza --> Pizza{...., size:small, cost: 10}
+**Expected Output:** newPizza --> Pizza{...., size:"small", cost: 10}
 
 **Test:** "It will calculate and enter a cost of $15 to the cost property if the size property is medium"\
-**Code:** Pizza {....., size: medium, cost: 0}\
+**Code:** Pizza {....., size: "medium", cost: 0}\
           Pizza.calculateCost()\
-**Expected Output:** Pizza {....., size: medium, cost: 15}
+**Expected Output:** Pizza {....., size: "medium", cost: 15}
 
 **Test:** "It will calculate and enter a cost of $20 to the cost property if the size property is large"\
-**Code:** Pizza {....., size: large, cost: 0}\
+**Code:** Pizza {....., size: "large", cost: 0}\
           Pizza.calculateCost()\
-**Expected Output:** Pizza {....., size: large, cost: 20}
+**Expected Output:** Pizza {....., size: "large", cost: 20}
+
+**Test:** "It will calculate and enter a cost of $20 to the cost property if the size property is extra-large"\
+**Code:** Pizza {....., size: "extra-large", cost: 0}\
+          Pizza.calculateCost()\
+**Expected Output:** Pizza {....., size: "extra-large", cost: "25"}

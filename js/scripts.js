@@ -11,5 +11,7 @@ Pizza.prototype.calculateCost = function () {
         this.cost += 15;
     } else if (this.size === "large") {
         this.cost += 20;
+    } else if (this.size === "extra-large") {
+        this.cost += 25;
     }
 };
