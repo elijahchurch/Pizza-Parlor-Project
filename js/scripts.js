@@ -20,10 +20,18 @@ Pizza.prototype.calculateCost = function () {
 
 // UI Logic 
 
-function handlePizzaOrderForm() {
-
+function handlePizzaOrderForm(event) {
+    event.preventDefault();
+    let toppings = [];
+    let selectedToppings = document.querySelectorAll("input[name='toppings']:checked");
+    selectedToppings.forEach(function (selection) {
+        toppings.push(selection.value)
+    });
+    let pizzaSize = document.getElementById("pizza-size").value;
+    console.log(typeof pizzaSize, pizzaSize, toppings);
 }
 
 window.addEventListener("load", function () {
-    // form event listener 
+    let pizzaForm = document.getElementById("pizza-order");
+    pizzaForm.addEventListener("submit", handlePizzaOrderForm);
 })

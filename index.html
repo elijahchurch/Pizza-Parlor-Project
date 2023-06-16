@@ -11,30 +11,30 @@
     <h1> Welcome to Pizza Place!</h1>
     <div>
         <h2> Fill out your order for a pizza:</h1>
-            <form>
+            <form id="pizza-order">
                 <h3> Select your toppings:</h3>
                 <label for="topping-1">Pepperoni</label>
-                <input type="checkbox" id="topping-1" value="Pepperoni">
+                <input type="checkbox" name="toppings" id="topping-1" value="Pepperoni">
                 <label for="topping-2">Sausage</label>
-                <input type="checkbox" id="topping-2" value="Sausage">
+                <input type="checkbox" name="toppings" id="topping-2" value="Sausage">
                 <label for="topping-3">Mushrooms</label>
-                <input type="checkbox" id="topping-3" value="Mushrooms">
+                <input type="checkbox" name="toppings" id="topping-3" value="Mushrooms">
                 <label for="topping-4">Onions</label>
-                <input type="checkbox" id="topping-4" value="Onions">
+                <input type="checkbox" name="toppings" id="topping-4" value="Onions">
                 <label for="topping-5">Olives</label>
-                <input type="checkbox" id="topping-5" value="Olives">
+                <input type="checkbox" name="toppings" id="topping-5" value="Olives">
                 <label for="topping-6">Green Peppers</label>
-                <input type="checkbox" id="topping-5" value="Green Peppers">
+                <input type="checkbox" name="toppings" id="topping-5" value="Green Peppers">
                 <label for="topping-7">Tomatoes</label>
-                <input type="checkbox" id="topping-7" value="Tomatoes">
+                <input type="checkbox" name="toppings" id="topping-7" value="Tomatoes">
                 <label for="topping-8">Basil</label>
-                <input type="checkbox" id="topping-1" value="Basil">
+                <input type="checkbox" name="toppings" id="topping-8" value="Basil">
                 <h3> Select a Size:</h3>
                 <select id="pizza-size">
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
-                    <option>Extra-Large</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="Extra-Large">Extra-Large</option>
                 </select>
                 <button type="submit">See my Order</button>
             </form>
