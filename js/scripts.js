@@ -20,12 +20,6 @@ Pizza.prototype.calculateCost = function () {
 
 // UI Logic 
 
-function uncheckBoxes(checkedboxes) {
-    for (let i = 0; i < length; i++) {
-        checkedboxes[i].checked = false;
-    }
-}
-
 function handlePizzaOrderForm(event) {
     event.preventDefault();
     let toppings = [];
@@ -45,12 +39,24 @@ function handlePizzaOrderForm(event) {
         listItem.innerText = topping;
     });
     document.getElementById("order-toppings").append(toppingList);
-    document.getElementById("order-result").removeAttribute("class");
-    console.log(selectedToppings);
-    uncheckBoxes(selectedToppings);
+    document.getElementById("order-result").classList.remove("hidden");
+    document.getElementById("starting-point").classList.add("hidden");
 }
+
+function resetBackToStart() {
+    document.getElementById("order-result").classList.add("hidden");
+    document.getElementById("starting-point").classList.remove("hidden");
+    document.querySelector("ul").remove();
+}
+
 
 window.addEventListener("load", function () {
     const pizzaForm = document.getElementById("pizza-order");
+    const newOrderButton = document.getElementById("new-order");
+    const checkOutButton = document.getElementById("check-out");
     pizzaForm.addEventListener("submit", handlePizzaOrderForm);
+    newOrderButton.addEventListener("click", function () {
+        pizzaForm.reset();
+        resetBackToStart();
+    });
 });
