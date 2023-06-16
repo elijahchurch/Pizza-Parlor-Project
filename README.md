@@ -2,7 +2,7 @@
 
 #### By: Jason Elijah Church
 
-#### A webpage where a user can order a pizza based on size and topping choice.
+#### A webpage where a user can order a pizza based on size and topping choices.
 
 ## Technologies Used
 
@@ -14,7 +14,7 @@
 * Visual Code Studio
 
 ## Description:
-This webpage was made with HTML and styled with CSS. It contains an order form where the user can create a pizza by selecting any number of desired toppings from checkbox inputs and a pizza size from a selector input. When the form is submitted, the HTML div where the form existed is hidden, and a previously hidden div appears displaying user's pizza order and the final cost calculated from the user's inputs. On the JavaScript end of things, when the form is submitted a constructor function is used to make an Object with properties whose values are defined by the user input values and with an additional cost property whose base value starts at 0. A custom prototype method for the Object is then called upon it, that checks the toppings and size property values via branching and adds value to the cost property based on the defined logic. The object's properties are targeted and added to the next HTML where specified. 
+This webpage was made with HTML and styled with CSS. It contains an order form where the user can create a pizza by selecting any number of desired toppings from checkbox inputs and a pizza size from a selector input. When the form is submitted, the HTML div where the form existed is hidden, and a previously hidden div appears displaying the user's pizza order and the final cost calculated from the user's inputs. On the JavaScript end of things, when the form is submitted a constructor function is used to make an Object with properties whose values are defined by the user input values and with an additional cost property whose base value starts at 0. A custom prototype method for the Object is then called upon it, checks the toppings and size property values via branching, and adds value to the cost property based on the defined logic. The object's properties are targeted and added to the next HTML div where specified. A new-order button appears at the bottom of this div as well, and upon clicking it, an event will occur where the form's results will reset. An additional custom function runs with this click event that changes the result div's class back to "hidden" and removes the "hidden" class from the parent div of the original form. 
 
 ## Tests for JavaScript functions:
 
@@ -59,7 +59,7 @@ Pizza.calcualteCost()\
 
 * Clone this repository to your desktop.
 * In the topmost directory of the project, open up all of the code using Visual Code Studio or a similar application to view the written code.
-* The webpage itself can be viewed and interacted with by right-clicking the index.html in Visual Code and opening up a Live Server or visiting this [webpage hosted by github]().
+* The webpage itself can be viewed and interacted with by right-clicking the index.html in Visual Code and opening up a Live Server or visiting this [webpage hosted by github](http://elijahchurch.github.io/Pizza-Parlor-Project).
 
 ## Known Bugs
 
