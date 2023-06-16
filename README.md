@@ -1,0 +1,28 @@
+# Pizza Parlor (working title)
+
+#### By: Jason Elijah Church
+
+#### A webpage where a user can order a pizza based on size and topping choice.
+
+## Technologies Used
+
+* HTML
+* JavaScript
+* Markdown
+* CSS
+* Git Bash
+* Visual Code Studio
+
+## Description:
+
+
+
+## Tests for JavaScript functions:
+
+**Describe:** Pizza()
+
+**Test:** "It should create a Pizza object that has properties for toppings and size"\
+**Code:** const newPizza = new Pizza(["pepperoni", "sausage"], "small")\
+**Expected Output:** newPizza --> Pizza{ toppings: ["pepperoni", "sausage"], size: "small}
+
+   
