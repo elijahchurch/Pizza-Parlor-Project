@@ -25,4 +25,10 @@
 **Code:** const newPizza = new Pizza(["pepperoni", "sausage"], "small")\
 **Expected Output:** newPizza --> Pizza{ toppings: ["pepperoni", "sausage"], size: "small}
 
-   
+**Test:** "It will also create a Pizza Object with a cost property that has an initial value of 0"\
+**Code:** const newPizza = new Pizza(["pepperoni", "sausage"], "small")\
+**Expected Output:** newPizza --> Pizza{...., cost: 0}
+
+**Describe:** Pizza.prototype.calculateCost() 
+
+**Test:** "It will calculate a cost of 
