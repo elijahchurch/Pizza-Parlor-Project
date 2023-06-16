@@ -32,6 +32,11 @@
 **Describe:** Pizza.prototype.calculateCost() 
 
 **Test:** "It will calculate and enter a cost of $10 to the cost property of a Pizza Object if the size of the Pizza Object is small"\
-**Code:** const newPizza = new Pizza(["pepperoni", "sausage"], "small")\
+**Code:** const newPizza = new Pizza(["pepperoni", "sausage"], "small", cost: 0)\
           newPizza.calculateCost()\
 **Expected Output:** newPizza --> Pizza{...., size:small, cost: 10}
+
+**Test:** "It will calculate and enter a cost of $15 to the cost property if the size property is medium"\
+**Code:** Pizza {....., size: medium, cost: 0}\
+          Pizza.calculateCost()\
+**Expected Output:** Pizza {....., size: medium, cost: 15}
