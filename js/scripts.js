@@ -5,6 +5,7 @@ function Pizza(toppingArray, inputSize) {
 }
 
 Pizza.prototype.calculateCost = function () {
+    this.cost += 1.50 * this.toppings.length;
     if (this.size === "small") {
         this.cost += 10;
     } else if (this.size === "medium") {
