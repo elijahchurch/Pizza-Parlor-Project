@@ -5,6 +5,10 @@ body {
     color: rgb(43, 42, 76);
 }
 
+h1 {
+    font-family: Georgia;
+}
+
 h2 {
     text-decoration: underline;
 }
@@ -17,7 +21,6 @@ button {
     background-color: rgb(43, 42, 76);
     color: rgb(238, 226, 222);
 }
-
 
 /* .hidden {
     display: none;
@@ -41,9 +44,14 @@ button {
     margin: 0 auto;
     padding: 10px;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .buttons {
     text-align: center;
+    font-size: large;
+}
+
+select {
+    font-size: large;
 }
